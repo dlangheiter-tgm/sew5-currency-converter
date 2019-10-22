@@ -1,0 +1,1 @@
+pyuic5.exe MyView.ui -o MyView.py
