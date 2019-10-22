@@ -1,6 +1,5 @@
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
-from api import BaseApi
 from api.LiveApi import LiveApi
 from api.MockApi import MockApi
 from gui import MyView
@@ -97,7 +96,6 @@ class MyController(QMainWindow):
         self.currency = ""
         self.target_currency = ""
         self.targets = []
-        self.life_data = True
 
         self.myForm.calculate.clicked.connect(self.calc_click)
         self.myForm.liveData.clicked.connect(self.live_click)
